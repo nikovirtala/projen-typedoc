@@ -229,15 +229,15 @@ const typeDocConfiguration: TypeDocConfiguration = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.basePath">basePath</a></code> | <code>string</code> | Specify the base path for all urls. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.cacheBust">cacheBust</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.cacheBust">cacheBust</a></code> | <code>boolean</code> | Include the generation time in links to prevent browsers from using a cached version. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.categorizeByGroup">categorizeByGroup</a></code> | <code>boolean</code> | Specify the categories that will be used to group reflections. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.cleanOutputDir">cleanOutputDir</a></code> | <code>boolean</code> | Prevent TypeDoc from cleaning the output directory specified with --out. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.commentStyle">commentStyle</a></code> | <code><a href="#@nikovirtala/projen-typedoc.CommentStyle">CommentStyle</a></code> | Specify the documentation mode TypeDoc should use. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.defaultCategory">defaultCategory</a></code> | <code>string</code> | Specify the default category for reflections without a category. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.defaultGroup">defaultGroup</a></code> | <code>string</code> | Specify the default group for reflections without a group. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.defaultVisibility">defaultVisibility</a></code> | <code><a href="#@nikovirtala/projen-typedoc.Visibility">Visibility</a></code> | Specify the default visibility for members without a visibility tag. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.disableGit">disableGit</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.disableSources">disableSources</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.disableGit">disableGit</a></code> | <code>boolean</code> | Disables setting the source of reflections when documenting projects within a Git repository. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.disableSources">disableSources</a></code> | <code>boolean</code> | Disables automatically linking to source code. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.entryPoints">entryPoints</a></code> | <code>string[]</code> | Specifies the entry points to be documented by TypeDoc. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.entryPointStrategy">entryPointStrategy</a></code> | <code><a href="#@nikovirtala/projen-typedoc.EntryPointStrategy">EntryPointStrategy</a></code> | Specifies the strategy to be used to convert entry points into documentation. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.exclude">exclude</a></code> | <code>string[]</code> | Define patterns to be excluded when expanding directories. |
@@ -245,14 +245,14 @@ const typeDocConfiguration: TypeDocConfiguration = { ... }
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.excludeInternal">excludeInternal</a></code> | <code>boolean</code> | Prevent symbols that are not exported from being documented. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.excludePrivate">excludePrivate</a></code> | <code>boolean</code> | Prevent private members from being included in the generated documentation. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.excludeProtected">excludeProtected</a></code> | <code>boolean</code> | Prevent protected members from being included in the generated documentation. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.externalPattern">externalPattern</a></code> | <code>string[]</code> | Specify the base URL for links to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.externalSymbolLinkMappings">externalSymbolLinkMappings</a></code> | <code>{[ key: string ]: {[ key: string ]: string}}</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.externalPattern">externalPattern</a></code> | <code>string[]</code> | Define patterns for files that should be considered external. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.externalSymbolLinkMappings">externalSymbolLinkMappings</a></code> | <code>{[ key: string ]: {[ key: string ]: string}}</code> | Define custom mappings for symbols in external packages. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.gitRemote">gitRemote</a></code> | <code>string</code> | Specify the git remote that should be used to link to source files. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.gitRevision">gitRevision</a></code> | <code>string</code> | Specify the git revision that should be used to link to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.hideGenerator">hideGenerator</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.hideParameterTypesInTitle">hideParameterTypesInTitle</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.hideGenerator">hideGenerator</a></code> | <code>boolean</code> | Do not print the TypeDoc link at the end of the page. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.hideParameterTypesInTitle">hideParameterTypesInTitle</a></code> | <code>boolean</code> | Hide parameter types in the signature. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.includes">includes</a></code> | <code>string</code> | Specify the location to look for included documents. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.intentionallyNotExported">intentionallyNotExported</a></code> | <code>string[]</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.intentionallyNotExported">intentionallyNotExported</a></code> | <code>string[]</code> | A list of types that should not produce warnings when not being exported. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.json">json</a></code> | <code>string</code> | Specify the location the documentation should be written to. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.logLevel">logLevel</a></code> | <code><a href="#@nikovirtala/projen-typedoc.LogLevel">LogLevel</a></code> | Specify the logger that should be used. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.media">media</a></code> | <code>string</code> | Specify the location with media files that should be copied to the output directory. |
@@ -260,20 +260,20 @@ const typeDocConfiguration: TypeDocConfiguration = { ... }
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.out">out</a></code> | <code>string</code> | Specifies the output directory the documentation should be written to. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.packageJson">packageJson</a></code> | <code>string</code> | Specify the package.json file that should be used to determine the package name. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.readme">readme</a></code> | <code>string</code> | Specify the readme file that should be displayed on the index page. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.requiredToBeDocumented">requiredToBeDocumented</a></code> | <code>string[]</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.requiredToBeDocumented">requiredToBeDocumented</a></code> | <code>string[]</code> | Specify the type of reflections that must be documented. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchCategoryBoosts">searchCategoryBoosts</a></code> | <code>{[ key: string ]: number}</code> | Specify the search category boosts. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchGroupBoosts">searchGroupBoosts</a></code> | <code>{[ key: string ]: number}</code> | Specify the search group boosts. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchInComments">searchInComments</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchInDocuments">searchInDocuments</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchInComments">searchInComments</a></code> | <code>boolean</code> | If set, the search index will also include comments. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchInDocuments">searchInDocuments</a></code> | <code>boolean</code> | If set, the search index will also include documents. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sort">sort</a></code> | <code>string[]</code> | Specify the sort strategy for documented values. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sortEntryPoints">sortEntryPoints</a></code> | <code>boolean</code> | Specify the sort strategy for static and instance members. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sourceUrlTemplate">sourceUrlTemplate</a></code> | <code>string</code> | Specify the base URL for links to source files. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.theme">theme</a></code> | <code>string</code> | Specify a theme name to use. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatValidationWarningsAsErrors">treatValidationWarningsAsErrors</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatWarningsAsErrors">treatWarningsAsErrors</a></code> | <code>boolean</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatValidationWarningsAsErrors">treatValidationWarningsAsErrors</a></code> | <code>boolean</code> | If set, validation warnings will be treated as errors. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatWarningsAsErrors">treatWarningsAsErrors</a></code> | <code>boolean</code> | If set, warnings will be treated as errors. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.tsBuildInfo">tsBuildInfo</a></code> | <code>string</code> | Specify the location and filename a .tsbuildinfo file should be written to. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.tsconfig">tsconfig</a></code> | <code>string</code> | Specify a TypeScript config file that should be used to load TypeScript configuration. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.validation">validation</a></code> | <code><a href="#@nikovirtala/projen-typedoc.ValidationOptions">ValidationOptions</a></code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.validation">validation</a></code> | <code><a href="#@nikovirtala/projen-typedoc.ValidationOptions">ValidationOptions</a></code> | Specify validation options. |
 
 ---
 
@@ -299,9 +299,9 @@ public readonly cacheBust: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+Include the generation time in links to prevent browsers from using a cached version.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/output/#cachebust](https://typedoc.org/options/output/#cachebust)
 
 ---
 
@@ -397,9 +397,9 @@ public readonly disableGit: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+Disables setting the source of reflections when documenting projects within a Git repository.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/comments/#disablegit](https://typedoc.org/options/comments/#disablegit)
 
 ---
 
@@ -411,9 +411,9 @@ public readonly disableSources: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+Disables automatically linking to source code.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/comments/#disablesources](https://typedoc.org/options/comments/#disablesources)
 
 ---
 
@@ -523,9 +523,9 @@ public readonly externalPattern: string[];
 
 - *Type:* string[]
 
-Specify the base URL for links to source files.
+Define patterns for files that should be considered external.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/input/#externalpattern](https://typedoc.org/options/input/#externalpattern)
 
 ---
 
@@ -537,9 +537,9 @@ public readonly externalSymbolLinkMappings: {[ key: string ]: {[ key: string ]: 
 
 - *Type:* {[ key: string ]: {[ key: string ]: string}}
 
-Specify the base URL for links to source files.
+Define custom mappings for symbols in external packages.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/comments/#externalsymbollinkmappings](https://typedoc.org/options/comments/#externalsymbollinkmappings)
 
 ---
 
@@ -579,9 +579,9 @@ public readonly hideGenerator: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+Do not print the TypeDoc link at the end of the page.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/output/#hidegenerator](https://typedoc.org/options/output/#hidegenerator)
 
 ---
 
@@ -593,9 +593,9 @@ public readonly hideParameterTypesInTitle: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+Hide parameter types in the signature.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/output/#hideparametertypesintitle](https://typedoc.org/options/output/#hideparametertypesintitle)
 
 ---
 
@@ -621,9 +621,9 @@ public readonly intentionallyNotExported: string[];
 
 - *Type:* string[]
 
-Specify the base URL for links to source files.
+A list of types that should not produce warnings when not being exported.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/validation/#intentionallynotexported](https://typedoc.org/options/validation/#intentionallynotexported)
 
 ---
 
@@ -733,9 +733,9 @@ public readonly requiredToBeDocumented: string[];
 
 - *Type:* string[]
 
-Specify the base URL for links to source files.
+Specify the type of reflections that must be documented.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/validation/#requiredtobedocumented](https://typedoc.org/options/validation/#requiredtobedocumented)
 
 ---
 
@@ -775,9 +775,9 @@ public readonly searchInComments: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+If set, the search index will also include comments.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/output/#searchincomments](https://typedoc.org/options/output/#searchincomments)
 
 ---
 
@@ -789,9 +789,9 @@ public readonly searchInDocuments: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+If set, the search index will also include documents.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/output/#searchindocuments](https://typedoc.org/options/output/#searchindocuments)
 
 ---
 
@@ -859,9 +859,9 @@ public readonly treatValidationWarningsAsErrors: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+If set, validation warnings will be treated as errors.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/validation/#treatvalidationwarningsaserrors](https://typedoc.org/options/validation/#treatvalidationwarningsaserrors)
 
 ---
 
@@ -873,9 +873,9 @@ public readonly treatWarningsAsErrors: boolean;
 
 - *Type:* boolean
 
-Specify the base URL for links to source files.
+If set, warnings will be treated as errors.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/validation/#treatwarningsaserrors](https://typedoc.org/options/validation/#treatwarningsaserrors)
 
 ---
 
@@ -915,9 +915,9 @@ public readonly validation: ValidationOptions;
 
 - *Type:* <a href="#@nikovirtala/projen-typedoc.ValidationOptions">ValidationOptions</a>
 
-Specify the base URL for links to source files.
+Specify validation options.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/options/validation/](https://typedoc.org/options/validation/)
 
 ---
 

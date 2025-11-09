@@ -229,100 +229,100 @@ export interface TypeDocConfiguration {
     readonly sourceUrlTemplate?: string;
 
     /**
-     * Specify the base URL for links to source files.
+     * Disables automatically linking to source code.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/comments/#disablesources
      */
     readonly disableSources?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * Disables setting the source of reflections when documenting projects within a Git repository.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/comments/#disablegit
      */
     readonly disableGit?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * Do not print the TypeDoc link at the end of the page.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/output/#hidegenerator
      */
     readonly hideGenerator?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * Hide parameter types in the signature.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/output/#hideparametertypesintitle
      */
     readonly hideParameterTypesInTitle?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * Include the generation time in links to prevent browsers from using a cached version.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/output/#cachebust
      */
     readonly cacheBust?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * If set, the search index will also include comments.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/output/#searchincomments
      */
     readonly searchInComments?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * If set, the search index will also include documents.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/output/#searchindocuments
      */
     readonly searchInDocuments?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * Specify validation options.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/validation/
      */
     readonly validation?: ValidationOptions;
 
     /**
-     * Specify the base URL for links to source files.
+     * Specify the type of reflections that must be documented.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/validation/#requiredtobedocumented
      */
     readonly requiredToBeDocumented?: string[];
 
     /**
-     * Specify the base URL for links to source files.
+     * If set, warnings will be treated as errors.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/validation/#treatwarningsaserrors
      */
     readonly treatWarningsAsErrors?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * If set, validation warnings will be treated as errors.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/validation/#treatvalidationwarningsaserrors
      */
     readonly treatValidationWarningsAsErrors?: boolean;
 
     /**
-     * Specify the base URL for links to source files.
+     * A list of types that should not produce warnings when not being exported.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/validation/#intentionallynotexported
      */
     readonly intentionallyNotExported?: string[];
 
     /**
-     * Specify the base URL for links to source files.
+     * Define patterns for files that should be considered external.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/input/#externalpattern
      */
     readonly externalPattern?: string[];
 
     /**
-     * Specify the base URL for links to source files.
+     * Define custom mappings for symbols in external packages.
      *
-     * @see https://typedoc.org/options/comments/#sourceurltemplate
+     * @see https://typedoc.org/options/comments/#externalsymbollinkmappings
      */
     readonly externalSymbolLinkMappings?: Record<string, Record<string, string>>;
 }
