@@ -26,6 +26,15 @@ new TypeDoc(project);
 project.synth();
 ```
 
+## Default Configuration
+
+The component uses the following default configuration:
+
+- `entryPointStrategy`: `expand` - Expects all entry points to be top-level directories
+- `out`: `docs/api` - Output directory for generated documentation
+- `exclude`: `["**/*.test.ts"]` - Excludes test files from documentation
+- `excludePrivate`: `true` - Excludes private members from documentation
+
 ## Configuration
 
 Customize TypeDoc configuration:
