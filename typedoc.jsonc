@@ -5,5 +5,6 @@
     "**/*.test.ts"
   ],
   "excludePrivate": true,
-  "out": "docs/api"
+  "out": "docs/api",
+  "disableSources": true
 }

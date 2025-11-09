@@ -14,6 +14,7 @@ const DEFAULT_CONFIG: TypeDocConfiguration = {
     out: "docs/api",
     exclude: ["**/*.test.ts"],
     excludePrivate: true,
+    disableSources: true,
 };
 
 export interface TypeDocOptions {
