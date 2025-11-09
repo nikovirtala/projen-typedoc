@@ -267,7 +267,7 @@ const typeDocConfiguration: TypeDocConfiguration = { ... }
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.searchInDocuments">searchInDocuments</a></code> | <code>boolean</code> | If set, the search index will also include documents. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sort">sort</a></code> | <code>string[]</code> | Specify the sort strategy for documented values. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sortEntryPoints">sortEntryPoints</a></code> | <code>boolean</code> | Specify the sort strategy for static and instance members. |
-| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sourceUrlTemplate">sourceUrlTemplate</a></code> | <code>string</code> | Specify the base URL for links to source files. |
+| <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sourceLinkTemplate">sourceLinkTemplate</a></code> | <code>string</code> | Specify a link template to be used when generating source urls. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.theme">theme</a></code> | <code>string</code> | Specify a theme name to use. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatValidationWarningsAsErrors">treatValidationWarningsAsErrors</a></code> | <code>boolean</code> | If set, validation warnings will be treated as errors. |
 | <code><a href="#@nikovirtala/projen-typedoc.TypeDocConfiguration.property.treatWarningsAsErrors">treatWarningsAsErrors</a></code> | <code>boolean</code> | If set, warnings will be treated as errors. |
@@ -287,7 +287,7 @@ public readonly basePath: string;
 
 Specify the base path for all urls.
 
-> [https://typedoc.org/options/output/#basepath](https://typedoc.org/options/output/#basepath)
+> [https://typedoc.org/documents/Options.Output.html#basepath](https://typedoc.org/documents/Options.Output.html#basepath)
 
 ---
 
@@ -301,7 +301,7 @@ public readonly cacheBust: boolean;
 
 Include the generation time in links to prevent browsers from using a cached version.
 
-> [https://typedoc.org/options/output/#cachebust](https://typedoc.org/options/output/#cachebust)
+> [https://typedoc.org/documents/Options.Output.html#cachebust](https://typedoc.org/documents/Options.Output.html#cachebust)
 
 ---
 
@@ -315,7 +315,7 @@ public readonly categorizeByGroup: boolean;
 
 Specify the categories that will be used to group reflections.
 
-> [https://typedoc.org/options/organization/#categorizebygroup](https://typedoc.org/options/organization/#categorizebygroup)
+> [https://typedoc.org/documents/Options.Organization.html#categorizebygroup](https://typedoc.org/documents/Options.Organization.html#categorizebygroup)
 
 ---
 
@@ -329,7 +329,7 @@ public readonly cleanOutputDir: boolean;
 
 Prevent TypeDoc from cleaning the output directory specified with --out.
 
-> [https://typedoc.org/options/output/#cleanoutputdir](https://typedoc.org/options/output/#cleanoutputdir)
+> [https://typedoc.org/documents/Options.Output.html#cleanoutputdir](https://typedoc.org/documents/Options.Output.html#cleanoutputdir)
 
 ---
 
@@ -343,7 +343,7 @@ public readonly commentStyle: CommentStyle;
 
 Specify the documentation mode TypeDoc should use.
 
-> [https://typedoc.org/options/comments/#commentstyle](https://typedoc.org/options/comments/#commentstyle)
+> [https://typedoc.org/documents/Options.Comments.html#commentstyle](https://typedoc.org/documents/Options.Comments.html#commentstyle)
 
 ---
 
@@ -357,7 +357,7 @@ public readonly defaultCategory: string;
 
 Specify the default category for reflections without a category.
 
-> [https://typedoc.org/options/organization/#defaultcategory](https://typedoc.org/options/organization/#defaultcategory)
+> [https://typedoc.org/documents/Options.Organization.html#defaultcategory](https://typedoc.org/documents/Options.Organization.html#defaultcategory)
 
 ---
 
@@ -371,7 +371,7 @@ public readonly defaultGroup: string;
 
 Specify the default group for reflections without a group.
 
-> [https://typedoc.org/options/organization/#defaultgroup](https://typedoc.org/options/organization/#defaultgroup)
+> [https://typedoc.org/documents/Options.Organization.html#defaultgroup](https://typedoc.org/documents/Options.Organization.html#defaultgroup)
 
 ---
 
@@ -385,7 +385,7 @@ public readonly defaultVisibility: Visibility;
 
 Specify the default visibility for members without a visibility tag.
 
-> [https://typedoc.org/options/comments/#defaultvisibility](https://typedoc.org/options/comments/#defaultvisibility)
+> [https://typedoc.org/documents/Options.Comments.html#defaultvisibility](https://typedoc.org/documents/Options.Comments.html#defaultvisibility)
 
 ---
 
@@ -399,7 +399,7 @@ public readonly disableGit: boolean;
 
 Disables setting the source of reflections when documenting projects within a Git repository.
 
-> [https://typedoc.org/options/comments/#disablegit](https://typedoc.org/options/comments/#disablegit)
+> [https://typedoc.org/documents/Options.Comments.html#disablegit](https://typedoc.org/documents/Options.Comments.html#disablegit)
 
 ---
 
@@ -413,7 +413,7 @@ public readonly disableSources: boolean;
 
 Disables automatically linking to source code.
 
-> [https://typedoc.org/options/comments/#disablesources](https://typedoc.org/options/comments/#disablesources)
+> [https://typedoc.org/documents/Options.Comments.html#disablesources](https://typedoc.org/documents/Options.Comments.html#disablesources)
 
 ---
 
@@ -427,7 +427,7 @@ public readonly entryPoints: string[];
 
 Specifies the entry points to be documented by TypeDoc.
 
-> [https://typedoc.org/options/input/#entrypoints](https://typedoc.org/options/input/#entrypoints)
+> [https://typedoc.org/documents/Options.Input.html#entrypoints](https://typedoc.org/documents/Options.Input.html#entrypoints)
 
 ---
 
@@ -441,7 +441,7 @@ public readonly entryPointStrategy: EntryPointStrategy;
 
 Specifies the strategy to be used to convert entry points into documentation.
 
-> [https://typedoc.org/options/input/#entrypointstrategy](https://typedoc.org/options/input/#entrypointstrategy)
+> [https://typedoc.org/documents/Options.Input.html#entrypointstrategy](https://typedoc.org/documents/Options.Input.html#entrypointstrategy)
 
 ---
 
@@ -455,7 +455,7 @@ public readonly exclude: string[];
 
 Define patterns to be excluded when expanding directories.
 
-> [https://typedoc.org/options/input/#exclude](https://typedoc.org/options/input/#exclude)
+> [https://typedoc.org/documents/Options.Input.html#exclude](https://typedoc.org/documents/Options.Input.html#exclude)
 
 ---
 
@@ -469,7 +469,7 @@ public readonly excludeExternals: boolean;
 
 Prevent externally resolved symbols from being documented.
 
-> [https://typedoc.org/options/input/#excludeexternals](https://typedoc.org/options/input/#excludeexternals)
+> [https://typedoc.org/documents/Options.Input.html#excludeexternals](https://typedoc.org/documents/Options.Input.html#excludeexternals)
 
 ---
 
@@ -483,7 +483,7 @@ public readonly excludeInternal: boolean;
 
 Prevent symbols that are not exported from being documented.
 
-> [https://typedoc.org/options/input/#excludeinternal](https://typedoc.org/options/input/#excludeinternal)
+> [https://typedoc.org/documents/Options.Input.html#excludeinternal](https://typedoc.org/documents/Options.Input.html#excludeinternal)
 
 ---
 
@@ -497,7 +497,7 @@ public readonly excludePrivate: boolean;
 
 Prevent private members from being included in the generated documentation.
 
-> [https://typedoc.org/options/input/#excludeprivate](https://typedoc.org/options/input/#excludeprivate)
+> [https://typedoc.org/documents/Options.Input.html#excludeprivate](https://typedoc.org/documents/Options.Input.html#excludeprivate)
 
 ---
 
@@ -511,7 +511,7 @@ public readonly excludeProtected: boolean;
 
 Prevent protected members from being included in the generated documentation.
 
-> [https://typedoc.org/options/input/#excludeprotected](https://typedoc.org/options/input/#excludeprotected)
+> [https://typedoc.org/documents/Options.Input.html#excludeprotected](https://typedoc.org/documents/Options.Input.html#excludeprotected)
 
 ---
 
@@ -525,7 +525,7 @@ public readonly externalPattern: string[];
 
 Define patterns for files that should be considered external.
 
-> [https://typedoc.org/options/input/#externalpattern](https://typedoc.org/options/input/#externalpattern)
+> [https://typedoc.org/documents/Options.Input.html#externalpattern](https://typedoc.org/documents/Options.Input.html#externalpattern)
 
 ---
 
@@ -539,7 +539,7 @@ public readonly externalSymbolLinkMappings: {[ key: string ]: {[ key: string ]: 
 
 Define custom mappings for symbols in external packages.
 
-> [https://typedoc.org/options/comments/#externalsymbollinkmappings](https://typedoc.org/options/comments/#externalsymbollinkmappings)
+> [https://typedoc.org/documents/Options.Comments.html#externalsymbollinkmappings](https://typedoc.org/documents/Options.Comments.html#externalsymbollinkmappings)
 
 ---
 
@@ -553,7 +553,7 @@ public readonly gitRemote: string;
 
 Specify the git remote that should be used to link to source files.
 
-> [https://typedoc.org/options/comments/#gitremote](https://typedoc.org/options/comments/#gitremote)
+> [https://typedoc.org/documents/Options.Comments.html#gitremote](https://typedoc.org/documents/Options.Comments.html#gitremote)
 
 ---
 
@@ -567,7 +567,7 @@ public readonly gitRevision: string;
 
 Specify the git revision that should be used to link to source files.
 
-> [https://typedoc.org/options/comments/#gitrevision](https://typedoc.org/options/comments/#gitrevision)
+> [https://typedoc.org/documents/Options.Comments.html#gitrevision](https://typedoc.org/documents/Options.Comments.html#gitrevision)
 
 ---
 
@@ -581,7 +581,7 @@ public readonly hideGenerator: boolean;
 
 Do not print the TypeDoc link at the end of the page.
 
-> [https://typedoc.org/options/output/#hidegenerator](https://typedoc.org/options/output/#hidegenerator)
+> [https://typedoc.org/documents/Options.Output.html#hidegenerator](https://typedoc.org/documents/Options.Output.html#hidegenerator)
 
 ---
 
@@ -595,7 +595,7 @@ public readonly hideParameterTypesInTitle: boolean;
 
 Hide parameter types in the signature.
 
-> [https://typedoc.org/options/output/#hideparametertypesintitle](https://typedoc.org/options/output/#hideparametertypesintitle)
+> [https://typedoc.org/documents/Options.Output.html#hideparametertypesintitle](https://typedoc.org/documents/Options.Output.html#hideparametertypesintitle)
 
 ---
 
@@ -609,7 +609,7 @@ public readonly includes: string;
 
 Specify the location to look for included documents.
 
-> [https://typedoc.org/options/output/#includes](https://typedoc.org/options/output/#includes)
+> [https://typedoc.org/documents/Options.Output.html#includes](https://typedoc.org/documents/Options.Output.html#includes)
 
 ---
 
@@ -623,7 +623,7 @@ public readonly intentionallyNotExported: string[];
 
 A list of types that should not produce warnings when not being exported.
 
-> [https://typedoc.org/options/validation/#intentionallynotexported](https://typedoc.org/options/validation/#intentionallynotexported)
+> [https://typedoc.org/documents/Options.Validation.html#intentionallynotexported](https://typedoc.org/documents/Options.Validation.html#intentionallynotexported)
 
 ---
 
@@ -637,7 +637,7 @@ public readonly json: string;
 
 Specify the location the documentation should be written to.
 
-> [https://typedoc.org/options/output/#json](https://typedoc.org/options/output/#json)
+> [https://typedoc.org/documents/Options.Output.html#json](https://typedoc.org/documents/Options.Output.html#json)
 
 ---
 
@@ -651,7 +651,7 @@ public readonly logLevel: LogLevel;
 
 Specify the logger that should be used.
 
-> [https://typedoc.org/options/other/#loglevel](https://typedoc.org/options/other/#loglevel)
+> [https://typedoc.org/documents/Options.Other.html#loglevel](https://typedoc.org/documents/Options.Other.html#loglevel)
 
 ---
 
@@ -665,7 +665,7 @@ public readonly media: string;
 
 Specify the location with media files that should be copied to the output directory.
 
-> [https://typedoc.org/options/output/#media](https://typedoc.org/options/output/#media)
+> [https://typedoc.org/documents/Options.Output.html#media](https://typedoc.org/documents/Options.Output.html#media)
 
 ---
 
@@ -679,7 +679,7 @@ public readonly name: string;
 
 Set the name of the project that will be used in the header of the template.
 
-> [https://typedoc.org/options/output/#name](https://typedoc.org/options/output/#name)
+> [https://typedoc.org/documents/Options.Output.html#name](https://typedoc.org/documents/Options.Output.html#name)
 
 ---
 
@@ -693,7 +693,7 @@ public readonly out: string;
 
 Specifies the output directory the documentation should be written to.
 
-> [https://typedoc.org/options/output/#out](https://typedoc.org/options/output/#out)
+> [https://typedoc.org/documents/Options.Output.html#out](https://typedoc.org/documents/Options.Output.html#out)
 
 ---
 
@@ -707,7 +707,7 @@ public readonly packageJson: string;
 
 Specify the package.json file that should be used to determine the package name.
 
-> [https://typedoc.org/options/input/#packagejson](https://typedoc.org/options/input/#packagejson)
+> [https://typedoc.org/documents/Options.Input.html#packagejson](https://typedoc.org/documents/Options.Input.html#packagejson)
 
 ---
 
@@ -721,7 +721,7 @@ public readonly readme: string;
 
 Specify the readme file that should be displayed on the index page.
 
-> [https://typedoc.org/options/input/#readme](https://typedoc.org/options/input/#readme)
+> [https://typedoc.org/documents/Options.Input.html#readme](https://typedoc.org/documents/Options.Input.html#readme)
 
 ---
 
@@ -735,7 +735,7 @@ public readonly requiredToBeDocumented: string[];
 
 Specify the type of reflections that must be documented.
 
-> [https://typedoc.org/options/validation/#requiredtobedocumented](https://typedoc.org/options/validation/#requiredtobedocumented)
+> [https://typedoc.org/documents/Options.Validation.html#requiredtobedocumented](https://typedoc.org/documents/Options.Validation.html#requiredtobedocumented)
 
 ---
 
@@ -749,7 +749,7 @@ public readonly searchCategoryBoosts: {[ key: string ]: number};
 
 Specify the search category boosts.
 
-> [https://typedoc.org/options/organization/#searchcategoryboosts](https://typedoc.org/options/organization/#searchcategoryboosts)
+> [https://typedoc.org/documents/Options.Organization.html#searchcategoryboosts](https://typedoc.org/documents/Options.Organization.html#searchcategoryboosts)
 
 ---
 
@@ -763,7 +763,7 @@ public readonly searchGroupBoosts: {[ key: string ]: number};
 
 Specify the search group boosts.
 
-> [https://typedoc.org/options/organization/#searchgroupboosts](https://typedoc.org/options/organization/#searchgroupboosts)
+> [https://typedoc.org/documents/Options.Organization.html#searchgroupboosts](https://typedoc.org/documents/Options.Organization.html#searchgroupboosts)
 
 ---
 
@@ -777,7 +777,7 @@ public readonly searchInComments: boolean;
 
 If set, the search index will also include comments.
 
-> [https://typedoc.org/options/output/#searchincomments](https://typedoc.org/options/output/#searchincomments)
+> [https://typedoc.org/documents/Options.Output.html#searchincomments](https://typedoc.org/documents/Options.Output.html#searchincomments)
 
 ---
 
@@ -791,7 +791,7 @@ public readonly searchInDocuments: boolean;
 
 If set, the search index will also include documents.
 
-> [https://typedoc.org/options/output/#searchindocuments](https://typedoc.org/options/output/#searchindocuments)
+> [https://typedoc.org/documents/Options.Output.html#searchindocuments](https://typedoc.org/documents/Options.Output.html#searchindocuments)
 
 ---
 
@@ -805,7 +805,7 @@ public readonly sort: string[];
 
 Specify the sort strategy for documented values.
 
-> [https://typedoc.org/options/organization/#sort](https://typedoc.org/options/organization/#sort)
+> [https://typedoc.org/documents/Options.Organization.html#sort](https://typedoc.org/documents/Options.Organization.html#sort)
 
 ---
 
@@ -819,21 +819,21 @@ public readonly sortEntryPoints: boolean;
 
 Specify the sort strategy for static and instance members.
 
-> [https://typedoc.org/options/organization/#sortentrypoints](https://typedoc.org/options/organization/#sortentrypoints)
+> [https://typedoc.org/documents/Options.Organization.html#sortentrypoints](https://typedoc.org/documents/Options.Organization.html#sortentrypoints)
 
 ---
 
-##### `sourceUrlTemplate`<sup>Optional</sup> <a name="sourceUrlTemplate" id="@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sourceUrlTemplate"></a>
+##### `sourceLinkTemplate`<sup>Optional</sup> <a name="sourceLinkTemplate" id="@nikovirtala/projen-typedoc.TypeDocConfiguration.property.sourceLinkTemplate"></a>
 
 ```typescript
-public readonly sourceUrlTemplate: string;
+public readonly sourceLinkTemplate: string;
 ```
 
 - *Type:* string
 
-Specify the base URL for links to source files.
+Specify a link template to be used when generating source urls.
 
-> [https://typedoc.org/options/comments/#sourceurltemplate](https://typedoc.org/options/comments/#sourceurltemplate)
+> [https://typedoc.org/documents/Options.Input.html#sourcelinktemplate](https://typedoc.org/documents/Options.Input.html#sourcelinktemplate)
 
 ---
 
@@ -847,7 +847,7 @@ public readonly theme: string;
 
 Specify a theme name to use.
 
-> [https://typedoc.org/options/output/#theme](https://typedoc.org/options/output/#theme)
+> [https://typedoc.org/documents/Options.Output.html#theme](https://typedoc.org/documents/Options.Output.html#theme)
 
 ---
 
@@ -861,7 +861,7 @@ public readonly treatValidationWarningsAsErrors: boolean;
 
 If set, validation warnings will be treated as errors.
 
-> [https://typedoc.org/options/validation/#treatvalidationwarningsaserrors](https://typedoc.org/options/validation/#treatvalidationwarningsaserrors)
+> [https://typedoc.org/documents/Options.Validation.html#treatvalidationwarningsaserrors](https://typedoc.org/documents/Options.Validation.html#treatvalidationwarningsaserrors)
 
 ---
 
@@ -875,7 +875,7 @@ public readonly treatWarningsAsErrors: boolean;
 
 If set, warnings will be treated as errors.
 
-> [https://typedoc.org/options/validation/#treatwarningsaserrors](https://typedoc.org/options/validation/#treatwarningsaserrors)
+> [https://typedoc.org/documents/Options.Validation.html#treatwarningsaserrors](https://typedoc.org/documents/Options.Validation.html#treatwarningsaserrors)
 
 ---
 
@@ -889,7 +889,7 @@ public readonly tsBuildInfo: string;
 
 Specify the location and filename a .tsbuildinfo file should be written to.
 
-> [https://typedoc.org/options/input/#tsbuildinfo](https://typedoc.org/options/input/#tsbuildinfo)
+> [https://typedoc.org/documents/Options.Input.html#tsbuildinfo](https://typedoc.org/documents/Options.Input.html#tsbuildinfo)
 
 ---
 
@@ -903,7 +903,7 @@ public readonly tsconfig: string;
 
 Specify a TypeScript config file that should be used to load TypeScript configuration.
 
-> [https://typedoc.org/options/input/#tsconfig](https://typedoc.org/options/input/#tsconfig)
+> [https://typedoc.org/documents/Options.Input.html#tsconfig](https://typedoc.org/documents/Options.Input.html#tsconfig)
 
 ---
 
@@ -917,7 +917,7 @@ public readonly validation: ValidationOptions;
 
 Specify validation options.
 
-> [https://typedoc.org/options/validation/](https://typedoc.org/options/validation/)
+> [https://typedoc.org/documents/Options.Validation.html](https://typedoc.org/documents/Options.Validation.html)
 
 ---
 
@@ -971,7 +971,7 @@ Version of TypeDoc to use.
 
 Validation options.
 
-> [https://typedoc.org/options/validation/](https://typedoc.org/options/validation/)
+> [https://typedoc.org/documents/Options.Validation.html](https://typedoc.org/documents/Options.Validation.html)
 
 #### Initializer <a name="Initializer" id="@nikovirtala/projen-typedoc.ValidationOptions.Initializer"></a>
 
@@ -1035,7 +1035,7 @@ If set, TypeDoc will produce warnings when a symbol is referenced by the documen
 
 Specifies the documentation mode TypeDoc should use.
 
-> [https://typedoc.org/options/comments/#commentstyle](https://typedoc.org/options/comments/#commentstyle)
+> [https://typedoc.org/documents/Options.Comments.html#commentstyle](https://typedoc.org/documents/Options.Comments.html#commentstyle)
 
 #### Members <a name="Members" id="Members"></a>
 
@@ -1072,7 +1072,7 @@ Specifies the documentation mode TypeDoc should use.
 
 Specifies the strategy to be used to convert entry points into documentation.
 
-> [https://typedoc.org/options/input/#entrypointstrategy](https://typedoc.org/options/input/#entrypointstrategy)
+> [https://typedoc.org/documents/Options.Input.html#entrypointstrategy](https://typedoc.org/documents/Options.Input.html#entrypointstrategy)
 
 #### Members <a name="Members" id="Members"></a>
 
@@ -1117,7 +1117,7 @@ Merges multiple projects into a single documentation site.
 
 Specifies the logger that should be used.
 
-> [https://typedoc.org/options/other/#loglevel](https://typedoc.org/options/other/#loglevel)
+> [https://typedoc.org/documents/Options.Other.html#loglevel](https://typedoc.org/documents/Options.Other.html#loglevel)
 
 #### Members <a name="Members" id="Members"></a>
 
@@ -1160,7 +1160,7 @@ Specifies the logger that should be used.
 
 Specifies the default visibility for members without a visibility tag.
 
-> [https://typedoc.org/options/comments/#defaultvisibility](https://typedoc.org/options/comments/#defaultvisibility)
+> [https://typedoc.org/documents/Options.Comments.html#defaultvisibility](https://typedoc.org/documents/Options.Comments.html#defaultvisibility)
 
 #### Members <a name="Members" id="Members"></a>
 

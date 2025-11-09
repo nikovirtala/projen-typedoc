@@ -2,6 +2,7 @@
 
 exports[`TypeDoc > with default configuration > generates correct snapshot for typedoc.jsonc 1`] = `
 {
+  "disableSources": true,
   "entryPointStrategy": "expand",
   "exclude": [
     "**/*.test.ts",

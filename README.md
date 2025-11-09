@@ -34,6 +34,7 @@ The component uses the following default configuration:
 - `out`: `docs/api` - Output directory for generated documentation
 - `exclude`: `["**/*.test.ts"]` - Excludes test files from documentation
 - `excludePrivate`: `true` - Excludes private members from documentation
+- `disableSource`: `true` - Disable links to source (to ensure deterministic build)
 
 ## Configuration
 
